@@ -1,0 +1,113 @@
+
+  <div
+     fxLayout="row"
+     fxLayout.xs="row"
+     fxFlexFill >
+     <div class="sec1">
+      <mat-toolbar color="primary" >Add Account Details</mat-toolbar>
+<mat-divider></mat-divider>
+      <!-- <legend class="borderof">Register</legend> -->
+    <div class="example-container" fxFlex.xs="55">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input type="text" matInput>
+      </mat-form-field>      </div>
+    <div class="example-container" >
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input type="text"  matInput >
+      </mat-form-field>
+          </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Father's Name</mat-label>
+        <input type="text" matInput >
+      </mat-form-field>
+    </div>
+    <div class="example-container"  fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile Number</mat-label>
+        <input type="number" matInput >
+      </mat-form-field>      </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Email ID</mat-label>
+        <input type="email" matInput>
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Adharcard Number</mat-label>
+        <input type="number"  matInput >
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>PAN</mat-label>
+        <input type="number"  matInput >
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>DOB</mat-label>
+
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea matInput></textarea>
+
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+          <mat-label>state</mat-label>
+          <select matNativeControl required>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <select matNativeControl required>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+      </mat-form-field>
+    </div>
+    <div class="example-container" fxFlex.xs="15">
+      <mat-form-field appearance="outline">
+        <mat-label>Pin Code</mat-label>
+        <input type="number"  matInput >
+      </mat-form-field>
+    </div>
+
+    <div class="example-container" fxFlex.xs="15">
+      <button mat-raised-button color="primary">Save Account Details</button>
+
+    </div>
+  </div>
+  <!-- </fieldset> -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
