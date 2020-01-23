@@ -1,0 +1,57 @@
+2020-01-23 13:29:56,327 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lti:maven_starter:1.0-SNAPSHOT @ D:\DevOps\Maven\maven_starter\pom.xml.
+2020-01-23 13:30:00,503 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:30:00,503 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\DevOps\Maven\maven_starter\src\main\resources
+2020-01-23 13:30:00,506 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:30:00,506 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\DevOps\Maven\maven_starter\src\test\resources
+2020-01-23 13:30:01,899 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:30:01,899 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\DevOps\Maven\maven_starter\src\main\resources
+2020-01-23 13:30:01,899 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:30:01,899 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\DevOps\Maven\maven_starter\src\test\resources
+2020-01-23 13:31:22,214 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lti:maven_starter:1.0-SNAPSHOT @ D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\pom.xml.
+2020-01-23 13:31:22,464 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:22,464 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:31:22,465 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:22,465 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:31:23,659 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:23,659 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:31:23,660 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:23,661 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:31:33,503 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:33,506 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:31:33,510 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:33,511 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:31:34,580 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:34,580 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:31:34,581 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:34,582 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:31:37,167 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:37,168 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:31:37,171 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:31:37,171 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:35:17,655 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lti:maven_starter:1.0-SNAPSHOT @ D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\pom.xml.
+2020-01-23 13:35:17,955 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:35:17,955 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:35:17,955 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:35:17,955 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:35:19,205 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:35:19,205 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:35:19,205 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:35:19,205 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:36:50,586 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lti:SpringBootStudentFinal:0.0.1-SNAPSHOT @ D:\Spring\SpringBootStudentFinal\pom.xml.
+2020-01-23 13:36:57,924 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:36:57,924 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Spring\SpringBootStudentFinal\src\main\resources
+2020-01-23 13:36:57,934 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:36:57,934 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Spring\SpringBootStudentFinal\src\test\resources
+2020-01-23 13:37:00,424 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:00,424 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Spring\SpringBootStudentFinal\src\main\resources
+2020-01-23 13:37:00,424 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:00,424 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Spring\SpringBootStudentFinal\src\test\resources
+2020-01-23 13:37:25,444 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lti:maven_starter:1.0-SNAPSHOT @ D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\pom.xml.
+2020-01-23 13:37:25,894 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:25,894 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:37:25,894 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:25,894 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
+2020-01-23 13:37:29,014 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:29,014 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\main\resources
+2020-01-23 13:37:29,024 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 13:37:29,024 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\LTI-Project\LTI-Project\BackEnd Code\RegisterAndLogin\src\test\resources
