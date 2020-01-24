@@ -21,9 +21,11 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { DashboardModule } from 'src/app/pages/dashboard/dashboard.module';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 @NgModule({
-  declarations: [LoginComponent, SignupComponent, AccountdetailsComponent],
+  declarations: [LoginComponent, SignupComponent, AccountdetailsComponent, ForgetPasswordComponent],
   imports: [
     CommonModule,
     LoginRoutingModule,

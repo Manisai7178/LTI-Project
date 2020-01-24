@@ -1,5 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { invalid } from '@angular/compiler/src/render3/view/util';
+
 
 @Component({
   selector: 'app-login',
@@ -9,17 +12,22 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit,OnDestroy {
 
   loginForm: FormGroup;
-  constructor() {
+  constructor(private router: Router) {
           this.loginForm = new FormGroup({
-        'uname' : new FormControl('', Validators.required),
+        'email': new FormControl('', Validators.required),
         'password': new FormControl('', Validators.required),
 
        });
 
   }
 
-  onSubmit(post){
-console.log('post--->', post);
+  login(post){
+ if(post.email == "kingkong" && post.password == "12345"){
+  this.router.navigate(['/login/dashboard']);
+ }else {
+   console.log('invalid')
+   alert('Invalid Details')
+ }
   }
 
   ngOnInit() {

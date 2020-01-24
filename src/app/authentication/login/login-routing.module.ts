@@ -4,10 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AccountdetailsComponent } from './accountdetails/accountdetails.component';
+import { DashboardComponent } from 'src/app/pages/dashboard/dashboard.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
-const routes: Routes = [{ path: '', component: LoginComponent },
+const routes: Routes = [
+{ path: '', component: LoginComponent },
 { path: 'signup', component: SignupComponent },
-{ path: 'account', component: AccountdetailsComponent }
+{ path: 'account', component: AccountdetailsComponent },
+{ path: 'forget', component: ForgetPasswordComponent },
+{ path: 'dashboard', loadChildren: () => import('./../../pages/dashboard/dashboard.module').then(m => m.DashboardModule)}
 ];
 
 @NgModule({
