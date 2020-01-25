@@ -1,0 +1,142 @@
+CustomerValues-------------------------------------------------------------------------------------
+
+
+
+insert into customer(customer_id,customer_name,gender,father_name , mobile_no,email_id ,adhaar_no ,pan_no, date_of_birth ,address
+		     ,state,city,pincode,occupation_type ,annual_income)
+			values(customer_sequence.nextval,'Manisai','Male','Ramesh',8328164747,'teju@78',902532195902,'EYMPP1557B',
+			'28-SEP-97','h.no:3-2-67,uppugaddastreet','telangana','vemulawada',505302,'jobholder',350000);		     
+		    
+insert into customer(customer_id,customer_name,gender,father_name , mobile_no,email_id ,adhaar_no ,pan_no, date_of_birth ,address
+		     ,state,city,pincode,occupation_type ,annual_income)
+			values(customer_sequence.nextval,'Manvitha','Female','Rajireddy',8328164748,'manu@123',902532195905,'EYMPP1557C',
+'29,SEP,1997','h.no:3-2-68,Gandhinagarstreet','telangana','Ammerpet',505487,'farmer',350000);
+
+
+insert into customer(customer_id,customer_name,gender,father_name , mobile_no,email_id ,adhaar_no ,pan_no, date_of_birth ,address
+		     ,state,city,pincode,occupation_type ,annual_income)
+			values(customer_sequence.nextval,'Sujith','Male','Ramesh',8328164749,'sujith@123',902532195906,'EYMPP1557D',
+'30,SEP,1997','h.no:3-2-69,SR Nagar','telangana','SR Nagar',505488,'Bussinessman',450000);
+
+
+insert into customer(customer_id,customer_name,gender,father_name , mobile_no,email_id ,adhaar_no ,pan_no, date_of_birth ,address
+		     ,state,city,pincode,occupation_type ,annual_income)
+			values(customer_sequence.nextval,'Sushmitha','Female','Ramesh',8328164750,'sush@1213',902532195907,'EYMPP1557E',
+'28,OCT,1997','h.no:3-2-67,Lakidika pol','telangana,'secundrabad',500200,'jobholder',350000);	
+
+
+
+	insert into customer(customer_id,customer_name,gender,father_name , mobile_no,email_id ,adhaar_no ,pan_no, date_of_birth ,address
+		     ,state,city,pincode,occupation_type ,annual_income)
+			values(customer_sequence.nextval,'tejaswini','Female','Ram',8328164751,'teja@1213',902532195908,'EYMPP1558E',
+'28,OCT,1999','h.no:3-2-67,Lakidika pol','telangana','secundrabad',500200,'jobholder',350000);	      
+		     
+		      
+
+
+
+
+
+
+		     
+		      
+	           
+   		   
+
+
+
+
+
+
+
+
+
+
+
+Admin-----------------------------------------------------------------------------------------------
+insert into admin values('admin1','Sanjay@123','SMT0001IFSC');
+insert into admin values('admin2','Rajeev@125','SMT0002IFSC');
+insert into admin values('admin3','Rajkumar@126','SMT0003IFSC');
+
+
+REGISTER---------------------------------------------------
+
+
+insert into register values('mani99','mani99','mani99', 678923465,108899,'admin1');
+
+insert into register values('manu99','manu99','manu99',678923466,108898,'admin1');
+
+
+insert into register values('sujith99','sujith99','sujith99',678923467,108900,'admin2');
+
+insert into register values('sush99','sush99','sush99',678923468,108902,'admin1');
+
+insert into register values('teju99','teju99','teju99',678923469,108901,'admin3');
+
+
+
+Account------------------------
+
+insert  into account values (account_no_sequence.nextval,'credit',1056400,'neft',108899,'SMT0002IFSC','admin1');
+insert  into account values (account_no_sequence.nextval,'debit',1000,'imps',108900,'SMT0001IFSC','admin1');
+insert  into account values (account_no_sequence.nextval,'debit',100560,'rtgs',108901,'SMT0002IFSC','admin2');
+insert  into account values (account_no_sequence.nextval,'credit',16570,'imps',108902,'SMT0001IFSC','admin1');
+insert  into account values (account_no_sequence.nextval,'debit',1056,'neft',108898,'SMT0003IFSC','admin3');
+
+beneficiary------------------------------
+insert into beneficiary_details values(123123123,'rina','CAN0001IFSC', 678923465);
+insert into beneficiary_details values(123123124,'priya','SBI0002IFSC', 678923466);
+insert into beneficiary_details values(123123125,'smitha','CAN0003IFSC', 678923465);
+insert into beneficiary_details values(123123126,'roy','SBI0001IFSC', 678923467);
+insert into beneficiary_details values(123123127,'preethi','CAN0001IFSC', 678923465);
+
+
+
+Transactions----------------------------------------------------------------------------------------
+
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',5000,'Success','CAN0001IFSC',123123123,678923465,'SMT0001IFSC',to_date('01/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'RTGS',6000,'Pending','SBI0002IFSC',123123124,678923466,'SMT0001IFSC',to_date('02/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'NEFT',10000,'Failed','SBI0002IFSC',123123124,678923466,'SMT0001IFSC',to_date('03/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','CAN0001IFSC',123123123,678923465,'SMT0001IFSC',to_date('04/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','SBI0002IFSC',123123124,678923465,'SMT0001IFSC',to_date('05/02/2020','DD/MM/YYYY'));
+
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',5000,'Success','CAN0003IFSC',123123125,678923465,'SMT0001IFSC',to_date('01/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'RTGS',6000,'Pending','SBI0001IFSC',123123126,678923467,'SMT0001IFSC',to_date('02/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'NEFT',10000,'Failed','CAN0003IFSC',123123125,678923465,'SMT0001IFSC',to_date('03/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','SBI0001IFSC',123123126,678923467,'SMT0001IFSC',to_date('04/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','CAN0003IFSC',123123125,678923465,'SMT0001IFSC',to_date('05/02/2020','DD/MM/YYYY'));
+
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',5000,'Success','SBI0001IFSC',123123126,678923467,'SMT0001IFSC',to_date('01/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'RTGS',6000,'Pending','CAN0001IFSC',123123127,678923465,'SMT0001IFSC',to_date('02/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'NEFT',10000,'Failed','SBI0001IFSC',123123126,678923467,'SMT0001IFSC',to_date('03/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','CAN0001IFSC',123123127,678923465,'SMT0001IFSC',to_date('04/02/2020','DD/MM/YYYY'));
+insert into transactions values(transactions_sequence.NEXTVAL,'IMPS',7000,'Success','SBI0001IFSC',123123126,678923467,'SMT0001IFSC',to_date('05/02/2020','DD/MM/YYYY'));
+
+
+
+RTGS-------------------------------------------------------------------------------------------------
+insert into rtgs_details values(rtgs_sequence.nextval,3,'fixeddeposit_interest',678923465,123123123,70671);
+insert into rtgs_details values(rtgs_sequence.nextval,2,'loanamount',678923466,123123124,70672);
+insert into rtgs_details values(rtgs_sequence.nextval,3,'caramount',678923466,123123124,70673);
+insert into rtgs_details values(rtgs_sequence.nextval,5,'Homeloan',678923465,123123123,70674);
+insert into rtgs_details values(rtgs_sequence.nextval,5,'Homeloan',678923465,123123124,70675);
+
+
+
+NEFT--------------------------------------------------------------------------------------------------
+insert into neft_details values(neft_sequence.nextval,3,'fixeddeposit_interest',678923465,123123125,70676);
+insert into neft_details values(neft_sequence.nextval,2,'loanamount',678923467,123123126,70677);
+insert into neft_details values(neft_sequence.nextval,3,'caramount',678923465,123123125,70678);
+insert into neft_details values(neft_sequence.nextval,5,'Homeloan',678923467,123123126,70679);
+insert into neft_details values(neft_sequence.nextval,5,'Homeloan',678923465,123123125,70680);
+
+
+
+
+
+IMPS------------------------------------------------------------------------------------------------
+insert into imps_details values(imps_sequence.nextval,3,'fixeddeposit_interest',678923467,123123126,70681);
+insert into imps_details values(imps_sequence.nextval,2,'loanamount',678923465,123123127,70682);
+insert into imps_details values(imps_sequence.nextval,3,'caramount',678923467,123123126,70683);
+insert into imps_details values(imps_sequence.nextval,5,'Homeloan',678923465,123123127,70684);
+insert into imps_details values(imps_sequence.nextval,5,'Homeloan',678923467,123123126,70685);

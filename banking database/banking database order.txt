@@ -1,0 +1,193 @@
+
+create table branch( branch_ifsc varchar(11) primary key,
+	             branch_name varchar(20),
+		     branch_location varchar(50),
+		     branch_state varchar(20),
+		     branch_city varchar(20));
+
+
+
+
+create table customer(customer_id number(6) primary key,
+		      customer_name varchar(50),
+		      gender varchar(10),
+		      father_name varchar(50),
+		      mobile_no number (10) constraint m_no unique ,
+		      email_id varchar(50) constarint e_no unique,
+		      adhaar_no number(12),
+		      pan_no varchar(10),
+		      date_of_birth date,
+		      address varchar(100),
+		      state varchar(20),
+		      city varchar(20), 
+		      pincode number(6),
+	              occupation_type varchar(20),  
+   		      annual_income number(15,2),
+		      branch_ifsc varchar(11),
+		      admin_id varchar(8),
+		      constraint fk_branch_ifsc1 foreign key (branch_ifsc) references branch(branch_ifsc));
+
+create sequence customer_sequence
+start with 108897
+increment by 1
+nomaxvalue
+nocycle
+nocache;
+
+
+create table admin(admin_id varchar(8) primary key,
+		   admin_password varchar(20),
+		   branch_ifsc varchar(11),
+	           constraint fk_branch_ifsc3 foreign key (branch_ifsc) references branch(branch_ifsc));
+
+
+
+create table register(customer_username varchar(8) primary key,
+		      customer_password varchar(20),
+		      transaction_password varchar(20),
+		      account_no number(9) unique,
+		      customer_id number(6),
+                      admin_id varchar(8),
+constraint fk_cid2 foreign key (customer_id) references customer(customer_id));	
+
+
+
+create table account(account_no number(9) primary key,
+		     account_services varchar(30),
+		     account_balance number(15,2),
+		     account_type varchar(20),
+		     customer_id number(6),
+		     branch_ifsc varchar(11),
+		     admin_id varchar(8),
+		     constraint fk_cid1 foreign key (customer_id) references customer(customer_id),
+		     constraint fk_branch_ifsc2 foreign key (branch_ifsc) references branch(branch_ifsc),
+		     constraint fk_admin2 foreign key (admin_id) references admin(admin_id));
+
+
+create sequence account_no_sequence
+start with 678923450
+increment by 1
+nomaxvalue
+nocycle
+nocache
+
+
+ALTER TABLE register
+ADD constraint fk_account1 foreign key (account_no) references account(account_no);
+
+
+
+
+ALTER TABLE register
+add  constraint fk_admin4 foreign key (admin_id) references admin(admin_id);
+
+
+alter table admin 
+add    constraint fk_register_id1 foreign key (customer_username) references register(customer_username);
+
+
+alter table customer 
+add  constraint fk_admin3 foreign key (admin_id) references admin(admin_id);
+
+
+create table beneficiary_details(beneficiary_account_no number(9) primary key,
+				 beneficiary_name varchar(50),
+				 beneficiary_branch_ifsc varchar(11),
+			         account_no number(9),
+			         constraint fk_account2 foreign key (account_no) references account(account_no));
+
+create table transactions(transaction_id number(5) primary key,
+			  mode_of_payment varchar(10),
+			  amount_credit_debit number(15,2),
+			                  
+		          transaction_status varchar(20),
+			  beneficiary_ifsc varchar(11),
+			  beneficiary_account_no number(9),
+		 	  account_no number(9),
+			  branch_ifsc varchar(11),
+                          transaction_date_time date,
+			  constraint fk_beneficiary_id1 foreign key (beneficiary_account_no) references beneficiary_details(beneficiary_account_no),
+			  constraint fk_account3 foreign key (account_no) references account(account_no),
+			  constraint fk_branch_ifsc4 foreign key (branch_ifsc) references branch(branch_ifsc));	   
+
+
+
+create sequence transactions_sequence    
+start with 70660
+increment by 1
+nomaxvalue
+nocycle
+nocache;
+
+
+
+create table rtgs_details(rtgs_id number(5) primary key,
+			  no_of_transactions number(5),
+			  maturity_instructions varchar(50),
+			  account_no number(9),
+			  beneficiary_account_no number(9),
+			  transaction_id number(5),
+			  constraint fk_account4 foreign key (account_no) references account(account_no),
+			  constraint fk_beneficiary_id2 foreign key (beneficiary_account_no) references beneficiary_details(beneficiary_account_no),
+			  constraint fk_transaction_id2 foreign key (transaction_id) references transactions(transaction_id));
+		
+
+
+create sequence rtgs_sequence    
+start with 80770
+increment by 1
+nomaxvalue
+nocycle
+nocache;
+
+
+
+create table imps_details(imps_id number(5) primary key,
+			  no_of_transactions number(5),
+			  maturity_instructions varchar(50),
+			  account_no number(9),
+			  beneficiary_account_no number(9),
+			  transaction_id number(5),
+			  constraint fk_account5 foreign key (account_no) references account(account_no),
+			  constraint fk_beneficiary_id3 foreign key (beneficiary_account_no) references beneficiary_details(beneficiary_account_no),
+			  constraint fk_transaction_id3 foreign key (transaction_id) references transactions(transaction_id));
+
+
+create sequence imps_sequence    
+start with 90880
+increment by 1
+nomaxvalue
+nocycle
+nocache;
+
+
+
+
+create table neft_details(neft_id number(5) primary key,
+			  no_of_transactions number(5),
+			  maturity_instructions varchar(50),
+			  account_no number(9),
+			  beneficiary_account_no number(9),
+			  transaction_id number(5),
+			  constraint fk_account6 foreign key (account_no) references account(account_no),
+			  constraint fk_beneficiary_id4 foreign key (beneficiary_account_no) references beneficiary_details(beneficiary_account_no),
+			  constraint fk_transaction_id4 foreign key (transaction_id) references transactions(transaction_id));
+
+
+
+create sequence neft_sequence    
+start with 10990
+increment by 1
+nomaxvalue
+nocycle
+nocache;
+
+
+
+create table fund_rules(transactions_type varchar(20) primary key,
+		   	amount_limit number(10,2),
+		        no_of_transactions number(2),
+		        maturity_instructions varchar(50));
+
+
+
